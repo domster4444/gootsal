@@ -1,0 +1,19 @@
+#mapViewBeginningSection {
+  margin-top: 2rem;
+  h1 {
+    color: $royal_blue;
+    font-size: 4rem;
+    text-align: center;
+  }
+  @include flexContainer;
+  flex-direction: column;
+  justify-content: center;
+
+  #mapDivision {
+    margin-top: 5rem;
+    img {
+      width: 100vw;
+      height: 76.7rem;
+    }
+  }
+}

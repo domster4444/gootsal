@@ -1,0 +1,110 @@
+#contactUsSection {
+  padding-top: 2rem;
+  color: $royal_white;
+  padding-bottom: 6rem;
+
+  background-color: $royal_blue;
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  label {
+    color: $royal_white;
+  }
+  #name {
+    width: 20rem;
+  }
+}
+
+.carousel-cell {
+  position: relative;
+}
+
+#welcomeMsg {
+  position: absolute;
+  top: 30rem;
+  left: 50rem;
+  font-size: 5.9rem;
+  @include media('<=1735px') {
+    left: 45rem;
+    font-size: 4.9rem;
+  }
+  @include media('<=1511px') {
+    left: 25rem;
+    font-size: 4.9rem;
+  }
+  @include media('<=1411px') {
+    left: 10rem;
+    top: 10rem;
+    font-size: 4.9rem;
+  }
+  @include media('<=857px') {
+    top: 15rem;
+    left: 10rem;
+    font-size: 3.9rem;
+  }
+  @include media('<=432px') {
+    top: 12rem;
+    left: 5rem;
+    font-size: 2.9rem;
+  }
+  z-index: 100000;
+  color: $royal_white;
+  font-weight: bolder;
+}
+
+#formNdInfo {
+  @include media('<=tablet') {
+    padding: 5rem;
+  }
+  @include flexContainer;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  #leftSection {
+    button {
+      margin-top: 2rem;
+    }
+    margin: 2rem;
+    input:not([type]):focus:not([readonly]),
+    input[type='text']:not(.browser-default):focus:not([readonly]),
+    input[type='password']:not(.browser-default):focus:not([readonly]),
+    input[type='email']:not(.browser-default):focus:not([readonly]),
+    input[type='url']:not(.browser-default):focus:not([readonly]),
+    input[type='time']:not(.browser-default):focus:not([readonly]),
+    input[type='date']:not(.browser-default):focus:not([readonly]),
+    input[type='datetime']:not(.browser-default):focus:not([readonly]),
+    input[type='datetime-local']:not(.browser-default):focus:not([readonly]),
+    input[type='tel']:not(.browser-default):focus:not([readonly]),
+    input[type='number']:not(.browser-default):focus:not([readonly]),
+    input[type='search']:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom: 1px solid $royal_black;
+      box-shadow: 0 1px 0 0 $royal_black;
+    }
+    input {
+      color: white;
+      @include media('<=700px') {
+        width: 20rem;
+      }
+      border-bottom: 1px solid $royal_white;
+      box-shadow: 0 1px 0 0 $royal_white;
+    }
+
+    label {
+      font-size: 1.5rem;
+    }
+  }
+  #rightSection {
+    h1 {
+      color: $royal_black;
+      font-size: 1.7rem;
+      text-align: left;
+    }
+    p {
+      color: $royal_black;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+#registrationMain {
+  @include flexContainer;
+  justify-content: center;
+  padding-top: 2rem;
+  height: 100vh;
+  background-image: url(../../img/slider1.jpg);
+  background-position: center;
+}
+#registrationBody {
+  a {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  padding: 3rem;
+  border-radius: 3rem;
+  label {
+    font-size: 2rem;
+    color: black;
+  }
+  width: 65%;
+  @include media('<=desktop') {
+    width: 90%;
+  }
+  background-color: $royal_white;
+  #imageRow {
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    background-image: url(../../img/assets/3.jpg);
+  }
+  #registrationFormSection {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      padding: 1rem 0rem;
+      font-size: 1.8rem;
+    }
+    hr {
+      height: 1px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    input {
+      margin: 2rem 0rem;
+    }
+  }
+}

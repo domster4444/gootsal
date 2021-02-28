@@ -1,0 +1,48 @@
+#loginPage {
+  background-image: url(../../img/glassBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#loginSection {
+  @include flexContainer;
+  align-items: center;
+  height: 100vh;
+  #loginBox {
+    @include flexContainer;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5rem;
+
+    width: 57rem;
+
+    @include media('<=853px') {
+      width: 100%;
+    }
+    height: 64rem;
+
+    text-align: center;
+    width: 50%;
+
+    //   -------------glassmorphism
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    form {
+      input {
+        margin: 2rem 0rem;
+      }
+      input[type='password'] {
+        margin-bottom: 7rem;
+      }
+      a {
+        width: 50%;
+      }
+    }
+  }
+}
